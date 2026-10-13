@@ -1,0 +1,160 @@
+footer:has(.account-footer) {
+  border-top: 1px solid #ebefee;
+  background-color: #fff;
+}
+
+footer:has(.account-footer) .footer > div {
+  max-width: none;
+  padding: 0;
+}
+
+footer .account-footer {
+  --af-body: #3c4242;
+  --af-accent: #d0006f;
+
+  padding: 24px 0;
+  color: var(--af-body);
+  font-family: inter, roboto, roboto-fallback, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .account-footer .account-footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min(1180px, 100% - 32px);
+  margin-inline: auto;
+}
+
+footer .account-footer p {
+  margin: 0;
+}
+
+footer .account-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .account-footer a:any-link {
+  color: inherit;
+}
+
+footer .account-footer a:hover {
+  color: var(--af-accent);
+}
+
+footer .account-footer a:focus-visible {
+  outline: 2px solid var(--af-accent);
+  outline-offset: 2px;
+}
+
+footer .account-footer .account-footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .account-footer .account-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer .account-footer .account-footer-brand img {
+  display: block;
+  width: 126px;
+  height: 30px;
+  object-fit: contain;
+}
+
+footer .account-footer .account-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer .account-footer .account-footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer .account-footer .account-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+footer .account-footer .account-footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+footer .account-footer .account-footer-social a {
+  display: block;
+}
+
+footer .account-footer .account-footer-social .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+footer .account-footer .account-footer-code {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media (width >= 600px) {
+  footer .account-footer {
+    padding: 32px 0;
+  }
+
+  footer .account-footer .account-footer-inner {
+    width: min(1180px, 100% - 64px);
+  }
+
+  footer .account-footer .account-footer-links {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  footer .account-footer .account-footer-links ul {
+    flex: 1;
+    gap: 16px;
+  }
+}
+
+@media (width >= 900px) {
+  footer .account-footer {
+    padding: 40px 0;
+  }
+
+  footer .account-footer .account-footer-inner {
+    gap: 48px;
+  }
+
+  footer .account-footer .account-footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+  }
+
+  footer .account-footer .account-footer-brand {
+    flex: 0 1 300px;
+  }
+
+  footer .account-footer .account-footer-links {
+    flex: 0 1 645px;
+    gap: 45px;
+  }
+
+  footer .account-footer .account-footer-links ul {
+    flex: 0 1 300px;
+  }
+}
