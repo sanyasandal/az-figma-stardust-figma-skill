@@ -1,0 +1,97 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:stardust",
+    "writtenAt": "2026-10-13T03:59:00Z",
+    "input": "Figma file rsZQmpVzuyn0KhCDA3WN60, node 13496:19403",
+    "authored": ["frame names, IDs and sizes from excatfigma metadata", "quoted copy from excatfigma design context"],
+    "synthesized": ["responsive frame grouping", "block candidates", "blocker classification"],
+    "read": ["get_metadata 13496:19403", "get_screenshot 13496:19403", "get_design_context 13496:10760", "get_design_context 13496:17255", "get_design_context 13496:17257", "get_screenshot 13496:17255", "get_screenshot 13496:17257"]
+  },
+  "status": "blocked-before-implementation",
+  "fileKey": "rsZQmpVzuyn0KhCDA3WN60",
+  "nodeId": "13496:19403",
+  "frameName": "Page: Login & Registration",
+  "frameSize": { "width": 26988, "height": 5394 },
+  "frameCount": 69,
+  "responsivePageCount": 23,
+  "target": {
+    "owner": "sanyasandal",
+    "repo": "az-figma-stardust-figma-skill",
+    "branch": "main",
+    "daOrg": "sanyasandal",
+    "daRepo": "az-figma-stardust-figma-skill",
+    "proposedPrefix": "/account",
+    "pathExistenceChecked": false,
+    "overwriteAuthorized": false,
+    "publicationRequested": false
+  },
+  "preflight": {
+    "figmaAccess": "passed: frame metadata and screenshots returned",
+    "figmaIdentity": "not exposed by this MCP",
+    "daAccess": "passed: authenticated MCP root listing returned index, nav and footer",
+    "checkout": "passed: clean main branch before evidence capture",
+    "skills": ["figma-to-content", "stardust", "impeccable", "da-auth", "da-content"],
+    "localPreview": "not running: localhost:3000 connection refused",
+    "browserValidation": "not run: no implementation"
+  },
+  "pages": [
+    { "name": "Login Landing", "desktop": "13496:10760", "tablet": "13496:10761", "mobile": "13496:10762" },
+    { "name": "Registration", "desktop": "13496:17255", "tablet": "13496:17256", "mobile": "13496:17257" },
+    { "name": "Channel Consent", "desktop": "13496:18714", "tablet": "13496:18715", "mobile": "13496:18716" },
+    { "name": "Email Verification", "desktop": "13496:19400", "tablet": "13496:19401", "mobile": "13496:19402" },
+    { "name": "Email Verified", "desktop": "13527:9171", "tablet": "13527:9177", "mobile": "13527:9183" },
+    { "name": "Profile Review", "desktop": "13527:9366", "tablet": "13527:9372", "mobile": "13527:9378" },
+    { "name": "Link Expired", "desktop": "13527:9552", "tablet": "13527:9558", "mobile": "13527:9564" },
+    { "name": "Resend Verification Email", "desktop": "13527:9738", "tablet": "13527:9744", "mobile": "13527:9750" },
+    { "name": "Forgot Password", "desktop": "13530:12110", "tablet": "13530:12117", "mobile": "13530:12124" },
+    { "name": "Waiting Confirmation", "desktop": "13530:16259", "tablet": "13530:16266", "mobile": "13530:16273" },
+    { "name": "Login without pass", "desktop": "13530:14671", "tablet": "13530:14678", "mobile": "13530:14685" },
+    { "name": "Reset link expired", "desktop": "13530:14956", "tablet": "13530:14963", "mobile": "13530:14970" },
+    { "name": "Reset pass sent", "desktop": "13530:15983", "tablet": "13530:15990", "mobile": "13530:15997" },
+    { "name": "Account Inactive", "desktop": "13530:16803", "tablet": "13530:16809", "mobile": "13530:16815" },
+    { "name": "Account Found", "desktop": "15011:9054", "tablet": "15011:9060", "mobile": "15011:9066" },
+    { "name": "Account Not Found", "desktop": "13530:16998", "tablet": "13530:17004", "mobile": "13530:17010" },
+    { "name": "Pending Validation", "desktop": "13530:17193", "tablet": "13530:17199", "mobile": "13530:17205" },
+    { "name": "Session Lost", "desktop": "13530:17388", "tablet": "13530:17394", "mobile": "13530:17400" },
+    { "name": "Reset Password", "desktop": "13530:12695", "tablet": "13530:12702", "mobile": "13530:12709" },
+    { "name": "Change Password", "desktop": "13530:14008", "tablet": "13530:14015", "mobile": "13530:14022" },
+    { "name": "Forgot Password Resend", "desktop": "13530:12392", "tablet": "13530:12399", "mobile": "13530:12406" },
+    { "name": "Reset Succesful", "desktop": "13530:13822", "tablet": "13530:13828", "mobile": "13530:13834" },
+    { "name": "Pass Successfully Changed", "desktop": "13530:14485", "tablet": "13530:14491", "mobile": "13530:14497" }
+  ],
+  "provisionalResolution": [
+    { "surface": "Login panel over image", "decision": "new isolated az-account block", "confidence": "high", "reason": "Existing hero, cards and columns blocks do not implement the form or its visual structure." },
+    { "surface": "Registration and consent forms", "decision": "new isolated account-form block, unresolved authoring model", "confidence": "low", "reason": "Breakpoint copy and field semantics conflict; backend and select option contracts are not specified." },
+    { "surface": "Verification and password status pages", "decision": "not resolved", "confidence": "low", "reason": "Inventory only; per-state context must be captured after the canonical source and scope are resolved." },
+    { "surface": "Header and footer", "decision": "separate site documents, not page-body blocks", "confidence": "high", "reason": "Use EDS chrome documents; do not overwrite existing nav or footer without authorization." }
+  ],
+  "blockers": [
+    {
+      "id": "canonical-registration-content",
+      "desktopNode": "13496:17255",
+      "mobileNode": "13496:17257",
+      "desktopHeading": "The most inspiring heading",
+      "desktopDescription": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause.",
+      "mobileHeading": "Registration",
+      "mobileDescription": "Register on the portal to have access to all confidential documents and personalize your experience on the site.",
+      "requiredResolution": "Identify approved canonical copy across breakpoints; do not invent or ship desktop placeholder copy."
+    },
+    {
+      "id": "registration-field-contract",
+      "evidence": "Both first and second name fields are labelled First name. Desktop has Title with e.g. Doctor; mobile labels that position Hospital/Practice name and has a second Hospital/Practice name field. Required markers for Hospital/Practice name and Speciality differ.",
+      "requiredResolution": "Supply approved field labels, required flags, HCP type and speciality options, and legal link destinations."
+    },
+    {
+      "id": "authentication-contract",
+      "evidence": "The frame includes password, registration, verification, reset, Magic Link, DocCheck and AZ employee login flows. No identity provider or API configuration was supplied.",
+      "requiredResolution": "For functional delivery, provide approved identity-service contracts. A design-only preview must clearly remain non-operational and must not submit or persist credentials or personal data."
+    }
+  ],
+  "delivery": {
+    "codeChanged": false,
+    "daContentWritten": false,
+    "previewCreated": false,
+    "livePublished": false,
+    "complete": false
+  }
+}

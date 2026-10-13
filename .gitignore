@@ -11,3 +11,10 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# >>> stardust
+.env
+.env.*
+# local drafts for aem up --html-folder
+drafts/
+# <<< stardust

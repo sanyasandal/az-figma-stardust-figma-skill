@@ -1,0 +1,377 @@
+main .section.account-form-container:has(.account-form.card) {
+  margin: 0;
+}
+
+main .account-form-wrapper:has(.account-form.card) {
+  max-width: none;
+  padding: 0;
+}
+
+main .account-form {
+  --af-title: #830051;
+  --af-body: #3c4242;
+  --af-accent: #d0006f;
+  --af-accent-dark: #a30057;
+  --af-accent-tint: #fdf0f6;
+  --af-border: #d8dada;
+  --af-rule: #d8dfde;
+  --af-strip: #ebefee;
+  --af-title-font: lexia, georgia, 'Times New Roman', serif;
+  --af-body-font: inter, roboto, roboto-fallback, sans-serif;
+
+  color: var(--af-body);
+  font-family: var(--af-body-font);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .account-form p {
+  margin: 0;
+}
+
+main .account-form .account-form-title {
+  margin: 0;
+  color: var(--af-title);
+  font-family: var(--af-title-font);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+main .account-form .account-form-panel,
+main .account-form .account-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+main .account-form .account-form-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+/* fields */
+main .account-form .account-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+main .account-form .account-form-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 2px;
+}
+
+main .account-form label {
+  color: var(--af-body);
+}
+
+main .account-form .account-form-required {
+  color: var(--af-accent);
+}
+
+main .account-form input:focus-visible,
+main .account-form a:focus-visible,
+main .account-form button:focus-visible {
+  outline: 2px solid var(--af-accent);
+  outline-offset: 2px;
+}
+
+main .account-form a:any-link:not(.button) {
+  color: var(--af-accent);
+  text-decoration: underline;
+}
+
+main .account-form a:not(.button):hover {
+  color: var(--af-accent-dark);
+}
+
+main .account-form .account-form-control {
+  position: relative;
+}
+
+main .account-form input:not([type='checkbox']) {
+  box-sizing: border-box;
+  width: 100%;
+  height: 54px;
+  border: 1px solid var(--af-border);
+  border-radius: 4px;
+  padding: 0 16px;
+  background: #fff;
+  color: var(--af-body);
+  font-size: 16px;
+}
+
+main .account-form input::placeholder {
+  color: #737878;
+}
+
+main .account-form input:hover {
+  border-color: #a5abab;
+}
+
+main .account-form .account-form-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 4px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+main .account-form .account-form-toggle:hover {
+  background: var(--af-strip);
+}
+
+main .account-form .account-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+main .account-form .account-form-checkbox input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--af-accent);
+}
+
+main .account-form .account-form-control:has(.account-form-toggle) input {
+  padding-right: 52px;
+}
+
+main .account-form .account-form-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+main .account-form .account-form-divider::before,
+main .account-form .account-form-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--af-rule);
+}
+
+/* buttons */
+main .account-form .account-form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .account-form p.button-wrapper {
+  margin: 0;
+}
+
+main .account-form a.button:any-link,
+main .account-form button.button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  border: 1px solid var(--af-accent);
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+main .account-form a.button.primary,
+main .account-form button.button.primary {
+  background: var(--af-accent);
+  color: #fff;
+}
+
+main .account-form a.button.primary:hover,
+main .account-form button.button.primary:hover {
+  border-color: var(--af-accent-dark);
+  background: var(--af-accent-dark);
+  color: #fff;
+}
+
+main .account-form a.button.secondary {
+  background: #fff;
+  color: var(--af-accent);
+}
+
+main .account-form a.button.secondary:hover {
+  border-color: var(--af-accent);
+  background: var(--af-accent-tint);
+  color: var(--af-accent);
+}
+
+main .account-form .account-form-message {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+main .account-form .account-form-message:empty {
+  display: none;
+}
+
+/* waiting indicator */
+main .account-form .account-form-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--af-accent);
+}
+
+main .account-form .account-form-dots {
+  display: flex;
+  gap: 8px;
+}
+
+main .account-form .account-form-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--af-accent);
+  animation: account-form-pulse 1.2s ease-in-out infinite;
+}
+
+main .account-form .account-form-dots span + span {
+  animation-delay: 0.4s;
+}
+
+@keyframes account-form-pulse {
+  0%,
+  100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .account-form .account-form-dots span {
+    animation: none;
+  }
+}
+
+/* default variant: centred status and form pages */
+main .account-form:not(.card) .account-form-panel {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* card variant: login over background image */
+main .account-form.card {
+  position: relative;
+}
+
+main .account-form.card .account-form-media {
+  display: none;
+}
+
+main .account-form.card .account-form-panel {
+  padding: 24px 16px;
+}
+
+main .account-form.card .account-form-title {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+main .account-form.card .account-form-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--af-strip);
+  text-align: center;
+}
+
+main .account-form.card .account-form-note p {
+  display: contents;
+}
+
+@media (width >= 600px) {
+  main .account-form.card {
+    display: flex;
+    align-items: center;
+    min-height: 869px;
+    padding: 32px 28px;
+    box-sizing: border-box;
+  }
+
+  main .account-form.card .account-form-media {
+    display: block;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  main .account-form.card .account-form-media picture,
+  main .account-form.card .account-form-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main .account-form.card .account-form-card {
+    position: relative;
+    width: 550px;
+    max-width: 100%;
+    background: #fff;
+  }
+
+  main .account-form.card .account-form-panel {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  main .account-form.card .account-form-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  main .account-form.card .account-form-note {
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+}
+
+@media (width >= 900px) {
+  main .account-form.card {
+    min-height: 941px;
+    padding: 40px max(80px, (100% - 1280px) / 2);
+  }
+
+  main .account-form:not(.card) .account-form-panel {
+    padding: 40px 0;
+  }
+
+  main .account-form:not(.card) .account-form-actions {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  main .account-form:not(.card) a.button:any-link,
+  main .account-form:not(.card) button.button {
+    width: auto;
+  }
+}

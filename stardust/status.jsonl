@@ -1,0 +1,4 @@
+{"ts":"2026-10-13T03:58:57Z","skill":"stardust:stardust","phase":"setup","event":"start","detail":"Initialize hands-off Figma-to-content evidence; Figma and DA preflight passed, source content gate blocked"}
+{"ts":"2026-10-13T04:06:28Z","skill":"stardust:stardust","phase":"setup","event":"end","detail":"Access verified and evidence persisted; no block or DA page authored"}
+{"ts":"2026-10-13T04:06:28Z","skill":"stardust:stardust","phase":"routing","event":"start","detail":"Figma-native preserve-design route, hands-off"}
+{"ts":"2026-10-13T04:06:28Z","skill":"stardust:stardust","phase":"routing","event":"blocked","detail":"Registration copy and field semantics conflict across breakpoints; approved canonical form content required before implementation","artifact":"stardust/figma-inventory.json"}

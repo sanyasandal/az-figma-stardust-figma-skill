@@ -1,0 +1,186 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:stardust",
+    "writtenAt": "2026-10-13T06:34:43.344Z",
+    "input": "Migrate Figma rsZQmpVzuyn0KhCDA3WN60 node 13496:19403 to EDS using figma-to-content and excatfigma",
+    "synthesized": [
+      "hands-off preserve-design routing"
+    ],
+    "read": [
+      "Figma metadata 13496:19403",
+      "README.md",
+      "stardust/figma-inventory.json"
+    ]
+  },
+  "site": {
+    "originUrl": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+    "deployUrl": "https://az-account--az-figma-stardust-figma-skill--sanyasandal.aem.page/account/login",
+    "extractedAt": null,
+    "pageCap": 23,
+    "totalDiscovered": 23,
+    "crawled": 0
+  },
+  "direction": {
+    "resolvedAt": "2026-10-13T03:59:00Z",
+    "phrase": "Preserve the supplied Figma design as authorable EDS content",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-10-13T03:59:00Z",
+  "flowSource": "hands-off-default",
+  "pages": [
+    {
+      "slug": "account-found",
+      "path": "/account/account-found",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "account-inactive",
+      "path": "/account/account-inactive",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "account-not-found",
+      "path": "/account/account-not-found",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "change-password",
+      "path": "/account/change-password",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "email-verification",
+      "path": "/account/email-verification",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "email-verified",
+      "path": "/account/email-verified",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "forgot-password",
+      "path": "/account/forgot-password",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "forgot-password-resend",
+      "path": "/account/forgot-password-resend",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "link-expired",
+      "path": "/account/link-expired",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "login",
+      "path": "/account/login",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "login-without-password",
+      "path": "/account/login-without-password",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "password-changed",
+      "path": "/account/password-changed",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "pending-validation",
+      "path": "/account/pending-validation",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "profile-review",
+      "path": "/account/profile-review",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "resend-verification-email",
+      "path": "/account/resend-verification-email",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "reset-link-expired",
+      "path": "/account/reset-link-expired",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "reset-password",
+      "path": "/account/reset-password",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "reset-password-sent",
+      "path": "/account/reset-password-sent",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "reset-successful",
+      "path": "/account/reset-successful",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "session-lost",
+      "path": "/account/session-lost",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    },
+    {
+      "slug": "waiting-confirmation",
+      "path": "/account/waiting-confirmation",
+      "status": "previewed-draft",
+      "block": "account-form",
+      "source": "figma-mobile-copy"
+    }
+  ],
+  "deferred": [
+    "registration",
+    "channel-consent"
+  ]
+}
